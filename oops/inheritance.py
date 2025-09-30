@@ -120,7 +120,7 @@ class Motorcycle(Vehicle):
         if not isinstance(has_sidecar, bool):
             raise ValueError("has_sidecar must be a boolean")
         self.__has_sidecar = has_sidecar  # Private attribute
-        
+
 
     def start_engine(self) -> str:
         """Override parent start_engine to include motorcycle-specific sound.
@@ -166,3 +166,4 @@ if __name__ == "__main__":
 
     except ValueError as e:
         print(f"Error: {e}")
+        
